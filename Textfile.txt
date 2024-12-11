@@ -1,3 +1,5 @@
 Name : Peter
 Age : 20
 Software Testing Grade : B+
+Salary : 60000
+Career : Programer

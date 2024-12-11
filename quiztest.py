@@ -2,9 +2,13 @@ import datetime
 
 def calAge(age):
     age = int(age)
-    this_year = datetime.date.today().year
-    birthYear = (this_year + 543) - age
-    return str(birthYear)
+    if isinstance(age,int):
+        this_year = datetime.date.today().year
+        birthYear = (this_year + 543) - age
+        return str(birthYear)
+    else:
+        raise ValueError("dfasfas")
+
 
 
 def calRank(grade):
@@ -23,7 +27,7 @@ def calRank(grade):
             case _:
                 return "Failed"
     else :
-        return ValueError
+        raise ValueError
 
 
 def ShowEditedData(file):
@@ -51,7 +55,7 @@ def ShowEditedData(file):
                 case "software testing grade":
                     print("Software Testing Rank : " + calRank(my_dict.get(i)))
                 case _:
-                    print("this function can't read this text file.")
+                    print(f"this function can't read this data name \" {i} \".")
 
 
 file = open("Textfile.txt","r")

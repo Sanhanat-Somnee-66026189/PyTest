@@ -16,9 +16,9 @@ def test06():
     assert calRank("C+") == 'Good'
 def test07():
     assert calRank("C") == 'Good'
-def test07():
+def test08():
     assert calRank("D+") == 'Normal'
-def test07():
+def test09():
     assert calRank("D") == 'Normal'
-def test07():
+def test10():
     assert calRank("F") == 'Failed'
